@@ -4,16 +4,16 @@ import PackageDescription
 let package = Package(
   name: "Prelude",
   products: [
-    .library(name: "Either", targets: ["Either"]),
-    .library(name: "Frp", targets: ["Frp"]),
-    .library(name: "Optics", targets: ["Optics"]),
-    .library(name: "Prelude", targets: ["Prelude"]),
-    .library(name: "Reader", targets: ["Reader"]),
-    .library(name: "State", targets: ["State"]),
-    .library(name: "Tuple", targets: ["Tuple"]),
-    .library(name: "ValidationSemigroup", targets: ["ValidationSemigroup"]),
-    .library(name: "ValidationNearSemiring", targets: ["ValidationNearSemiring"]),
-    .library(name: "Writer", targets: ["Writer"]),
+    .library(name: "Prelude", targets: ["Either",
+                                       "Frp",
+                                       "Optics",
+                                       "Prelude",
+                                       "Reader",
+                                       "State",
+                                       "Tuple",
+                                       "ValidationSemigroup",
+                                       "ValidationNearSemiring",
+                                       "Writer"])
   ],
   targets: [
     .target(name: "Either", dependencies: ["Prelude"]),
